@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gobinda Chandra Panda — Python Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">GCP<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certs</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal"><span class="tag-bracket">[</span> Available for opportunities <span class="tag-bracket">]</span></p>
+      <h1 class="hero-name reveal">
+        <span class="name-line">Gobinda</span>
+        <span class="name-line accent-line">Chandra Panda</span>
+      </h1>
+      <p class="hero-title reveal"><span class="mono">~$</span> Student Python Developer</p>
+      <p class="hero-tagline reveal">Building smart web applications<br>with <em>Python &amp; Django</em></p>
+      <div class="hero-meta reveal">
+        <span><i class="fas fa-location-dot"></i> Nashik, Maharashtra, India</span>
+      </div>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn btn-primary">View Work</a>
+        <a href="assets/resume.pdf" class="btn btn-outline" download>
+          <i class="fas fa-download"></i> Resume
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">01</span> About</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-heading">Crafting digital<br><em>experiences</em> with code</h2>
+          <p>I'm a passionate MCA student with a strong foundation in Python, Django, and full-stack web development. I love turning complex problems into clean, efficient solutions — whether that's architecting backend systems or building interactive frontends.</p>
+          <p>Currently pursuing my Master's in Computer Applications, I'm actively building projects that push my understanding of real-world software engineering, databases, and data-driven applications.</p>
+          <div class="about-tags">
+            <span>Problem Solver</span>
+            <span>Fast Learner</span>
+            <span>Team Player</span>
+            <span>Open Source Fan</span>
+          </div>
+        </div>
+        <div class="about-edu reveal">
+          <h3 class="edu-heading">Education</h3>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-info">
+              <h4>Master of Computer Applications</h4>
+              <p class="edu-school">Currently Pursuing · 2024–2026</p>
+              <div class="edu-badge">CGPA: 8.3</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="fas fa-flask"></i></div>
+            <div class="edu-info">
+              <h4>B.Sc Zoology</h4>
+              <p class="edu-school">Graduated 2024</p>
+              <div class="edu-badge">72%</div>
+            </div>
+          </div>
+          <div class="stat-row">
+            <div class="stat-item">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">02</span> Skills</div>
+      <h2 class="section-heading reveal">My Tech <em>Arsenal</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-top">
+                <span>Python</span><span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span>JavaScript</span><span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span>Java</span><span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span>HTML & CSS</span><span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-layer-group"></i>
+            <h3>Frameworks</h3>
+          </div>
+          <div class="skill-cards-mini">
+            <div class="mini-card"><i class="fab fa-python"></i><span>Django</span></div>
+            <div class="mini-card"><i class="fas fa-fire"></i><span>Flask</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-database"></i>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-cards-mini">
+            <div class="mini-card"><i class="fas fa-server"></i><span>MySQL</span></div>
+            <div class="mini-card"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-cards-mini">
+            <div class="mini-card"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
+            <div class="mini-card"><i class="fas fa-table"></i><span>Excel</span></div>
+            <div class="mini-card"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            <div class="mini-card"><i class="fab fa-github"></i><span>GitHub</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- ── PROJECTS ── -->
+<section id="projects" class="section projects">
+  <div class="container">
+    <div class="section-label reveal"><span class="mono">03</span> Projects</div>
+    <h2 class="section-heading reveal">Things I've <em>Built</em></h2>
+
+    <div class="projects-grid">
+
+      <!-- ✅ PROJECT 1 -->
+      <div class="project-card featured reveal">
+        <div class="project-card-inner">
+          <div class="project-tag">Featured Project</div>
+          <div class="project-number">01</div>
+
+          <h3 class="project-title">BidZone</h3>
+          <p class="project-subtitle">Online Auction System</p>
+
+          <p class="project-desc">
+            A full-featured online auction platform that allows users to list items,
+            place bids in real time, and manage transactions seamlessly.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check-circle"></i> User authentication & role management</li>
+            <li><i class="fas fa-check-circle"></i> Real-time bidding</li>
+            <li><i class="fas fa-check-circle"></i> Item listing with images</li>
+            <li><i class="fas fa-check-circle"></i> Auction timer</li>
+            <li><i class="fas fa-check-circle"></i> Admin dashboard</li>
+            <li><i class="fas fa-check-circle"></i> Secure payments</li>
+          </ul>
+
+          <div class="project-stack">
+            <span>Python</span>
+            <span>Django</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+            <span>Bootstrap</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/gobindagit2025/online-auction-system" class="btn btn-primary" target="_blank">
+              <i class="fab fa-github"></i> GitHub Repo
+            </a>
+            <a href="https://github.com/gobindagit2025/online-auction-system/blob/main/README.md" class="btn btn-ghost">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- VISUAL -->
+        <div class="project-visual">
+          <div class="project-mockup">
+            <div class="mockup-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-header"></div>
+              <div class="mockup-hero"></div>
+              <div class="mockup-cards">
+                <div class="mockup-card"><div class="mockup-img"></div><div class="mockup-text-line"></div><div class="mockup-price"></div></div>
+                <div class="mockup-card"><div class="mockup-img"></div><div class="mockup-text-line"></div><div class="mockup-price"></div></div>
+                <div class="mockup-card"><div class="mockup-img"></div><div class="mockup-text-line"></div><div class="mockup-price"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ PROJECT 2 (NOW PERFECTLY MATCHED) -->
+      <div class="project-card featured reveal">
+        <div class="project-card-inner">
+          <div class="project-tag">Project</div>
+          <div class="project-number">02</div>
+
+          <h3 class="project-title">FastCab</h3>
+          <p class="project-subtitle">Online Cab Booking System</p>
+
+          <p class="project-desc">
+            A smart cab booking web app for booking rides, tracking drivers,
+            and managing trips efficiently in real-time.
+          </p>
+
+          <ul class="project-features">
+            <li><i class="fas fa-check-circle"></i> User login system</li>
+            <li><i class="fas fa-check-circle"></i> Real-time booking</li>
+            <li><i class="fas fa-check-circle"></i> Driver dashboard</li>
+            <li><i class="fas fa-check-circle"></i> Ride tracking</li>
+            <li><i class="fas fa-check-circle"></i> Location search</li>
+            <li><i class="fas fa-check-circle"></i> Secure system</li>
+          </ul>
+
+          <div class="project-stack">
+            <span>Python</span>
+            <span>Django</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>HTML/CSS</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/gobindagit2025/FASTCAB" class="btn btn-primary">
+              <i class="fab fa-github"></i> GitHub Repo
+            </a>
+            <a href="https://github.com/gobindagit2025/FASTCAB/blob/main/README.md" class="btn btn-ghost">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- SAME VISUAL -->
+        <div class="project-visual">
+          <div class="project-mockup">
+            <div class="mockup-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-header"></div>
+              <div class="mockup-hero"></div>
+              <div class="mockup-cards">
+                <div class="mockup-card"><div class="mockup-img"></div><div class="mockup-text-line"></div><div class="mockup-price"></div></div>
+                <div class="mockup-card"><div class="mockup-img"></div><div class="mockup-text-line"></div><div class="mockup-price"></div></div>
+                <div class="mockup-card"><div class="mockup-img"></div><div class="mockup-text-line"></div><div class="mockup-price"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section id="certifications" class="section certs">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">04</span> Certifications</div>
+      <h2 class="section-heading reveal">Learning <em>Milestones</em></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-brain"></i></div>
+          <div class="cert-body">
+            <div class="cert-badge">FDP</div>
+            <h3>Deep Learning with Generative AI</h3>
+            <p>Faculty Development Programme covering generative models, neural networks, and modern AI architectures.</p>
+          </div>
+          <div class="cert-ribbon"></div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fab fa-python"></i></div>
+          <div class="cert-body">
+            <div class="cert-badge">Internship</div>
+            <h3>Python Full Stack Development</h3>
+            <p>Hands-on internship covering Python backend development, Django, REST APIs, and frontend integration.</p>
+          </div>
+          <div class="cert-ribbon"></div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-body">
+            <div class="cert-badge grade">A+</div>
+            <h3>Python Workshop</h3>
+            <p>Intensive workshop on Python programming fundamentals, OOP, data structures, and practical applications.</p>
+          </div>
+          <div class="cert-ribbon"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label reveal"><span class="mono">05</span> Contact</div>
+      <h2 class="section-heading reveal">Let's <em>Connect</em></h2>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm always open to discussing new opportunities, interesting projects, or just having a great conversation about tech.</p>
+          <div class="contact-items">
+            <a href="mailto:gobindap952@gmail.com" class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <span class="ci-val">gobindap952@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+91 7752040457" class="contact-item">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Phone</span>
+                <span class="ci-val">+91 7752040457</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
+              <div class="ci-text">
+                <span class="ci-label">Location</span>
+                <span class="ci-val">Nashik, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/gobindagit2025" target="_blank" class="social-btn" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gobinda-panda-2a64b435a/" target="_blank" class="social-btn" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:gobindap952@gmail.com" class="social-btn" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Gobinda" autocomplete="name" />
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Gobinda@example.com" autocomplete="email" />
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+            <span class="form-error" id="subject-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div id="form-success" class="form-success hidden">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">GCP<span class="dot">.</span></div>
+      <p class="footer-copy">© 2025 Gobinda Chandra Panda. Crafted with <i class="fas fa-heart"></i> &amp; Python.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/gobindagit2025" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/gobinda-panda-2a64b435a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:gobindap952@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
