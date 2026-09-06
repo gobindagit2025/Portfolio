@@ -65,7 +65,7 @@ function revealElements() {
     if (top < window.innerHeight - 80) {
       setTimeout(() => {
         el.classList.add("visible");
-      }, i * 80);
+      }, i * 60);
     }
   });
 }
@@ -202,8 +202,8 @@ if (canvas) {
     particles.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
-      dx: (Math.random() - 0.5) * 0.5,
-      dy: (Math.random() - 0.5) * 0.5
+      dx: (Math.random() - 0.5) * 1.5,
+      dy: (Math.random() - 0.5) * 1.5
     });
   }
 

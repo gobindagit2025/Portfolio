@@ -26,7 +26,7 @@
   --radius: 12px;
   --radius-lg: 20px;
   --shadow: 0 8px 40px rgba(0,0,0,0.4);
-  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme="light"] {
@@ -634,7 +634,7 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(90deg, var(--accent), var(--accent2));
   border-radius: 2px;
   width: 0;
-  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .skill-cards-mini {
@@ -1179,8 +1179,8 @@ img { max-width: 100%; display: block; }
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reveal.visible {
